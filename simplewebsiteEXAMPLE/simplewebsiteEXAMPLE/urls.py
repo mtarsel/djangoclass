@@ -10,9 +10,9 @@ urlpatterns = patterns('',
     # Examples:
     # url(r'^$', 'simplewebsiteEXAMPLE.views.home', name='home'),
     # url(r'^simplewebsiteEXAMPLE/', include('simplewebsiteEXAMPLE.foo.urls')),
-    url(r'hello/$', hello),
-    url(r'^time/$', current_datetime),
-    url(r'^time/plus/(\d{1,2})/$', hours_ahead),
+    url(r'hello/$', hello, name="hello"),
+    url(r'^time/$', current_datetime, name="timer"),
+    url(r'^time/plus/(\d{1,2})/$', hours_ahead, name="timeplus"),
 
     # Uncomment the admin/doc line below to enable admin documentation:
     # url(r'^admin/doc/', include('django.contrib.admindocs.urls')),
