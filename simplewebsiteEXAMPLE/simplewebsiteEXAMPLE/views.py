@@ -5,3 +5,6 @@ def error404(request):
 
 def home(request):
     return render(request,'home.html')
+
+def thankyou(request):
+    return render(request,'thankyou.html')
