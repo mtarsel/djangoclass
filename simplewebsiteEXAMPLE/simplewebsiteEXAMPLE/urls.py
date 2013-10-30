@@ -11,16 +11,21 @@ urlpatterns = patterns('',
     # Examples:
     # url(r'^$', 'simplewebsiteEXAMPLE.views.home', name='home'),
     # url(r'^simplewebsiteEXAMPLE/', include('simplewebsiteEXAMPLE.foo.urls')),
+
+    #timer.views:
     url(r'hello/$', hello, name="hello"),
     url(r'^time/$', current_datetime, name="timer"),
     url(r'^time/plus/(\d{1,2})/$', hours_ahead, name="timeplus"),
 
-    url(r'^home/$', home, name="home"),
+    #views.py
     url(r'^accounts/login/$', 'django.contrib.auth.views.login', {'template_name': 'login.html'}),
     url(r'^accounts/logout/$', 'django.contrib.auth.views.logout', {'template_name': 'logout.html'}),
 
+    #contact app
     url(r'^contact/', 'contact.views.contact'),
-    
+   
+    #view.py 
+    url(r'^home/$', home, name="home"),
     url(r'^thankyou/$', thankyou, name="thankyou"),
     
     # Uncomment the admin/doc line below to enable admin documentation:

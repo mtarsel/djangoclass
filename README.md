@@ -1,9 +1,9 @@
 djangoclass
 ===========
 
-shell-examples contains code from djangoproject.com and included is a txt file with some shell commands to mess around with objects
+[Lectures are located here](http://people.clarkson.edu/~tarselmj/django/)
 
-simplewebsiteEXAMPLE will eventually contain all the code explained from djangobook.com
+---
 
 For email testing:
 
